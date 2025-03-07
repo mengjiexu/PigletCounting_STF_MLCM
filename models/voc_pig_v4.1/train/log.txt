@@ -1,0 +1,13 @@
+Overriding /home/xmj/mycipan3/yolov8_count/projects/ultralytics/ultralytics/yolo/cfg/default.yaml with cfgs/v4.1_voc_pig_cfg.yaml
+Ultralytics YOLOv8.0.78 🚀 Python-3.9.16 torch-1.13.1+cu117 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+                                                            CUDA:1 (NVIDIA GeForce RTX 3090, 24260MiB)
+Model summary (fused): 268 layers, 43608150 parameters, 0 gradients, 164.8 GFLOPs
+val: Scanning /home/xmj/mycipan4/SED_VOCdevkit/labels/test2007.cache... 3183 images, 0 backgrounds, 0 corrupt: 
+val: Caching images (2.2GB True): 100%|██████████| 3183/3183 [00:07<00:00, 409.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 100/
+                   all       3183      32781      0.976      0.981      0.992      0.923
+                   pig       3183      32610      0.986      0.975      0.993      0.933
+                person       3183        171      0.966      0.987      0.992      0.912
+Speed: 0.3ms preprocess, 8.5ms inference, 0.0ms loss, 0.5ms postprocess per image
+Results saved to voc_pig_v4/val5
+

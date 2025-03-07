@@ -1,0 +1,6 @@
+pynvml
+opencv-python
+numpy
+pandas
+pycuda
+tensorrt
