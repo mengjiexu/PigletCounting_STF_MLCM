@@ -27,21 +27,21 @@ pip install -r requirements.txt
 '''
 
 ## Usage
-'''bash
+```bash
 python3 v4.1_count.py demo/10146_20201218103004003_81.mp4 demo/output.mp4 . demo/output.csv 81
-'''
+```
 the output is like:
-'''base
+```base
 [03/07/2025-11:44:47] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
 write to demo/output.mp4 12 [1280, 720]
- 99%|███████████████████████████████████████████████████████████████████████████████████▌| 538/541.0 [00:15<00:00, 51.79it/s]count: -81
+ 99%|██████████████████████████████████████▌| 538/541.0 [00:15<00:00, 51.79it/s]count: -81
 542it [00:16, 32.20it/s]  
-'''
+```
 you need to build engine file from onnx using YOLOv8-TensorRT:
-'''bash
+```bash
 cd YOLOv8-TensorRT
 python3 build.py --weights ./models/voc_pig_v4.1/train/weights/best.onnx --iou-thres 0.7 --conf-thres 0.25 --topk 200 --device cuda:0
-'''
+```
 
 ## Future Work
 
